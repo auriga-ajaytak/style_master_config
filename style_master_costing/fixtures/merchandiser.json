@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Merchandiser",
+  "modified": "2022-10-18 15:30:41.736602",
+  "name": "Feeroz Khan",
+  "name1": "Feeroz Khan",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Merchandiser",
+  "modified": "2022-10-18 15:32:43.841694",
+  "name": "Jaspreet Kaur",
+  "name1": "Jaspreet Kaur",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Merchandiser",
+  "modified": "2022-10-18 15:33:06.029183",
+  "name": "Manisha Bakshi",
+  "name1": "Manisha Bakshi",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

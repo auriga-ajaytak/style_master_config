@@ -1,0 +1,35 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Value Addition",
+  "modified": "2022-09-27 11:54:19.403781",
+  "name": "Printing",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "task_description": null,
+  "task_name": "Printing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Value Addition",
+  "modified": "2022-09-27 11:54:38.902119",
+  "name": "Dyeing",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "task_description": null,
+  "task_name": "Dyeing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Value Addition",
+  "modified": "2022-09-27 11:54:56.185224",
+  "name": "Embroidery",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "task_description": null,
+  "task_name": "Embroidery"
+ }
+]

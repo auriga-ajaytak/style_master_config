@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-21 12:59:21.499602",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lab_test",
+  "lab_testing_type",
+  "lab_testing_category"
+ ],
+ "fields": [
+  {
+   "fieldname": "lab_test",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lab Test",
+   "options": "Lab Tests"
+  },
+  {
+   "fieldname": "lab_testing_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lab Testing Type"
+  },
+  {
+   "fieldname": "lab_testing_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lab Testing Category"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Lab Test Template Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

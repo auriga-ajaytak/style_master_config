@@ -1,0 +1,447 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-19 09:59:25.334194",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fabric_name",
+  "category",
+  "remarks",
+  "consumption",
+  "consumption_buyer",
+  "unit",
+  "rate_our",
+  "rate_buyer",
+  "amount_our",
+  "amount_buyer",
+  "component",
+  "fabric_type",
+  "currency",
+  "exch_rate",
+  "hs_code",
+  "description",
+  "garment_qty",
+  "item_size",
+  "item_color",
+  "purchase_extra",
+  "production_extra",
+  "garment_wastage",
+  "sample_qty",
+  "total_req_qty",
+  "fabric_supplier_name",
+  "fabric_require_date",
+  "transport_mode",
+  "insurance_amt",
+  "freight_based_on",
+  "freight_with_gst",
+  "import_duty",
+  "handling_charges",
+  "gst_percent",
+  "gst_amt",
+  "total_amt",
+  "per_piece_value",
+  "freight_amt",
+  "import_duty_amt",
+  "nominated_or_self",
+  "total_reqd_qty_buyer",
+  "total_amt_buyer",
+  "per_piece_value_buyer",
+  "position",
+  "classification",
+  "fabric_data_name",
+  "required_for",
+  "panel"
+ ],
+ "fields": [
+  {
+   "columns": 7,
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":2}",
+   "fieldname": "fabric_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fabric Code",
+   "options": "Item",
+   "width": "200"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Category"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":4}",
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#BEB2D7\",\"position\":10}",
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Consumption",
+   "precision": "2"
+  },
+  {
+   "fieldname": "consumption_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Consumption (Buyer)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#BEB2D7\",\"position\":11}",
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item UOM",
+   "options": "UOM"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":21}",
+   "fieldname": "rate_our",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fabric Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "rate_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Fabric Rate (Buyer)",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":24}",
+   "fieldname": "amount_our",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fabric Amount",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "amount_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Fabric Amount (Buyer)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":6}",
+   "fieldname": "component",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Component"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":18}",
+   "fieldname": "fabric_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source",
+   "options": "Local\nProcess\nStock\nImport\nBuyer"
+  },
+  {
+   "default": "INR",
+   "description": "{\"position\":22}",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "description": "{\"position\":23}",
+   "fieldname": "exch_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Exch. Rate",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":5}",
+   "fieldname": "hs_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HS Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Description"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":9}",
+   "fieldname": "garment_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Garment Qty.",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#BEB2D7\",\"position\":12}",
+   "fieldname": "item_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fabric Width"
+  },
+  {
+   "fieldname": "item_color",
+   "fieldtype": "Data",
+   "label": "Item Color"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":13}",
+   "fieldname": "purchase_extra",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Purchase Extra (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":14}",
+   "fieldname": "production_extra",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Consumption Allowance (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":15}",
+   "fieldname": "garment_wastage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Garment Wastage (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\"}",
+   "fieldname": "sample_qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Sample Qty.",
+   "precision": "2"
+  },
+  {
+   "description": "{\"position\":16}",
+   "fieldname": "total_req_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Req. Qty.",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":20}",
+   "fieldname": "fabric_supplier_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fabric Supplier Name",
+   "options": "Supplier"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FF944D\",\"position\":25}",
+   "fieldname": "fabric_require_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fabric Require Date"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":26}",
+   "fieldname": "transport_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transport Mode",
+   "options": "Train\nAir\nBus\nCourier\nPorter"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":27}",
+   "fieldname": "insurance_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Insurance Amt.",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":28}",
+   "fieldname": "freight_based_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Freight Based on",
+   "options": "Lumsum\nPercentage"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":29}",
+   "fieldname": "freight_with_gst",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Freight with GST",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":31}",
+   "fieldname": "import_duty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Import Duty (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":33}",
+   "fieldname": "handling_charges",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Handling Charges",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#CECEC3\",\"position\":34}",
+   "fieldname": "gst_percent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GST (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"position\":35}",
+   "fieldname": "gst_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GST Amt.",
+   "precision": "2"
+  },
+  {
+   "description": "{\"position\":36}",
+   "fieldname": "total_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Amt.",
+   "precision": "2"
+  },
+  {
+   "description": "{\"position\":37}",
+   "fieldname": "per_piece_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Per Piece Value",
+   "precision": "2"
+  },
+  {
+   "description": "{\"position\":30}",
+   "fieldname": "freight_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Freight Amt.",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":32}",
+   "fieldname": "import_duty_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Import Duty Amt.",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "Self Precured",
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":19}",
+   "fieldname": "nominated_or_self",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Nominated or Self",
+   "options": "Nominated\nSelf Precured"
+  },
+  {
+   "fieldname": "total_reqd_qty_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Total Reqd. Qty (Buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amt_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Total Amt. (Buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "per_piece_value_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Per Piece Value (Buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":8}",
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Position"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":17}",
+   "fieldname": "classification",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Classification",
+   "options": "Classification"
+  },
+  {
+   "description": "{\"position\":3}",
+   "fieldname": "fabric_data_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fabric Name",
+   "read_only": 1
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":7}",
+   "fieldname": "required_for",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Process Type",
+   "options": "Required For"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":1}",
+   "fieldname": "panel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Panel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Fabric",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

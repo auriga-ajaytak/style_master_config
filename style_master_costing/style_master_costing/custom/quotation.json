@@ -1,0 +1,34 @@
+{
+ "custom_fields": [
+  {
+   "dt": "Quotation",
+   "fieldname": "styles_section",
+   "fieldtype": "Section Break",
+   "insert_after": "items",
+   "label": "Styles",
+   "module": "Style Master Costing"
+  },
+  {
+   "dt": "Quotation",
+   "fieldname": "styles",
+   "fieldtype": "Table",
+   "insert_after": "styles_section",
+   "label": "Styles",
+   "module": "Style Master Costing",
+   "options": "Quotation Style Master"
+  }
+ ],
+ "custom_perms": [],
+ "doctype": "Quotation",
+ "property_setters": [
+  {
+   "doc_type": "Quotation",
+   "doctype_or_field": "DocField",
+   "field_name": "order_type",
+   "property": "options",
+   "property_type": "Text",
+   "value": "\nSales\nMaintenance\nShopping Cart\nCMP\nEmbriodery\nCorsage\nCutting"
+  }
+ ],
+ "sync_on_migrate": 1
+}

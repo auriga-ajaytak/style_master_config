@@ -1,0 +1,22 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Cost Type",
+  "modified": "2022-10-18 15:22:41.136947",
+  "name": "Production",
+  "name1": "Production",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Cost Type",
+  "modified": "2022-10-18 15:22:48.513243",
+  "name": "Processing",
+  "name1": "Processing",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

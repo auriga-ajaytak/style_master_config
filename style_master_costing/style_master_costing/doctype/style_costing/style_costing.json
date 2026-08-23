@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-19 16:27:56.544184",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cost_head",
+  "cost_percent",
+  "cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "cost_head",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Head",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cost_percent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "% of Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cost",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rs.",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Style Costing",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Season",
+  "modified": "2022-10-18 15:18:51.533894",
+  "name": "Winter",
+  "name1": "Winter",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Season",
+  "modified": "2022-10-18 15:19:00.847429",
+  "name": "Autmn",
+  "name1": "Autmn",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Season",
+  "modified": "2022-10-18 15:19:08.005687",
+  "name": "Summer",
+  "name1": "Summer",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

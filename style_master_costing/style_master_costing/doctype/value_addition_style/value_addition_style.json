@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-28 18:23:12.792118",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity",
+  "fabric",
+  "component",
+  "position",
+  "artwork",
+  "value_addition_placement",
+  "placement_image_1",
+  "placement_image_2",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity",
+   "options": "Value Addition"
+  },
+  {
+   "fieldname": "fabric",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Fabric",
+   "options": "Item"
+  },
+  {
+   "fieldname": "component",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Component"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Position"
+  },
+  {
+   "fieldname": "artwork",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Artwork"
+  },
+  {
+   "fieldname": "value_addition_placement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Value Addition Placement"
+  },
+  {
+   "fieldname": "placement_image_1",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Placement Image 1"
+  },
+  {
+   "fieldname": "placement_image_2",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Placement Image 2"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Value Addition Style",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

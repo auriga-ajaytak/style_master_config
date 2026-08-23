@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-18 20:01:24.907907",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cost_type",
+  "order_type",
+  "based_on",
+  "percent_extra",
+  "rate_our",
+  "rate_buyer",
+  "currency",
+  "component",
+  "group",
+  "amount_our",
+  "amount_buyer",
+  "process_area",
+  "supplier",
+  "gst_percent",
+  "gst_amt_buyer",
+  "gst_amt_our"
+ ],
+ "fields": [
+  {
+   "fieldname": "cost_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cost Type",
+   "options": "Cost Type"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Order Type",
+   "options": "Production Category"
+  },
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Based On",
+   "options": "Qty\nSMV"
+  },
+  {
+   "default": "0",
+   "fieldname": "percent_extra",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "% Extra",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "rate_our",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "rate_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Rate (Buyer)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "component",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Component",
+   "read_only": 1
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Group"
+  },
+  {
+   "fieldname": "amount_our",
+   "fieldtype": "Float",
+   "label": "Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "amount_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Amount (Buyer)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "process_area",
+   "fieldtype": "Select",
+   "label": "Process Area",
+   "options": "Internal\nExternal"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "gst_percent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GST (%)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "gst_amt_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "GST Amt. (buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gst_amt_our",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GST Amt.",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Manufacturing Cost",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

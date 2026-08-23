@@ -1,0 +1,16 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Sales Order",
+ "property_setters": [
+  {
+   "doc_type": "Sales Order",
+   "doctype_or_field": "DocField",
+   "field_name": "order_type",
+   "property": "options",
+   "property_type": "Text",
+   "value": "\nSales\nMaintenance\nShopping Cart\nCMP\nEmbriodery\nCorsage\nCutting"
+  }
+ ],
+ "sync_on_migrate": 1
+}

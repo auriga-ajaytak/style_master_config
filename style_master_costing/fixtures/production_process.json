@@ -1,0 +1,112 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:35:06.989996",
+  "name": "Cutting",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Cutting"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:35:15.355989",
+  "name": "Stickering",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Stickering"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:35:22.881797",
+  "name": "Bundling",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Bundling"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:35:29.535896",
+  "name": "Value Addition Process",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Value Addition Process"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:35:39.867161",
+  "name": "Loading",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Loading"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:35:47.163933",
+  "name": "Part preparation",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Part preparation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:35:54.176542",
+  "name": "Stitching",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Stitching"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:36:01.146182",
+  "name": "Trimming",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Trimming"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:36:08.233905",
+  "name": "Ironing",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Ironing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Production Process",
+  "modified": "2022-09-22 17:36:15.476019",
+  "name": "Packing",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "process_description": null,
+  "process_name": "Packing"
+ }
+]

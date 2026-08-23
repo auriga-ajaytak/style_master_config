@@ -1,0 +1,22 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Segment",
+  "modified": "2022-10-18 15:19:58.387128",
+  "name": "Woven",
+  "name1": "Woven",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Segment",
+  "modified": "2022-10-18 15:20:04.145474",
+  "name": "Knit",
+  "name1": "Knit",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

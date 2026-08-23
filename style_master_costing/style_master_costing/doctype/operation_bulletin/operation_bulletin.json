@@ -1,0 +1,234 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:operation_bulletin_name",
+ "creation": "2022-11-04 10:54:29.776062",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation_bulletin_data",
+  "operation_bulletin_table",
+  "operation_bulletin_name",
+  "style_no",
+  "gmt_desc",
+  "customer",
+  "order_qty",
+  "order_ref_no",
+  "section_break_2",
+  "section_break_8",
+  "working_hours",
+  "gmt_smv",
+  "total_manpower",
+  "column_break_8",
+  "h_target__hour",
+  "s_target__hour",
+  "column_break_5",
+  "column_break_12",
+  "update_table",
+  "removed_items",
+  "total_rate",
+  "ob_date",
+  "created_by",
+  "attach_image",
+  "attach_image_12",
+  "existing_category",
+  "ob_order",
+  "exi_cat",
+  "row_values"
+ ],
+ "fields": [
+  {
+   "fieldname": "operation_bulletin_data",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Operation Bulletin Data"
+  },
+  {
+   "fieldname": "operation_bulletin_table",
+   "fieldtype": "HTML",
+   "label": "Operation Bulletin Table"
+  },
+  {
+   "fieldname": "operation_bulletin_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Operation Bulletin Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "style_no",
+   "fieldtype": "Link",
+   "label": "Style No",
+   "options": "Style Master"
+  },
+  {
+   "fieldname": "gmt_desc",
+   "fieldtype": "Data",
+   "label": "GMT Desc"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "order_qty",
+   "fieldtype": "Int",
+   "label": "Order qty"
+  },
+  {
+   "fieldname": "order_ref_no",
+   "fieldtype": "Data",
+   "label": "Order Ref No"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "8",
+   "fieldname": "working_hours",
+   "fieldtype": "Int",
+   "label": "Working Hours",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "gmt_smv",
+   "fieldtype": "Float",
+   "label": "GMT SMV",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_manpower",
+   "fieldtype": "Int",
+   "label": "Total Manpower",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "h_target__hour",
+   "fieldtype": "Int",
+   "label": "100% Target / Hour",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "s_target__hour",
+   "fieldtype": "Int",
+   "label": "70% Target / Hour",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "update_table",
+   "fieldtype": "Button",
+   "label": "Update Table"
+  },
+  {
+   "fieldname": "removed_items",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Removed Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_rate",
+   "fieldtype": "Float",
+   "label": "Total Rate Per Piece",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ob_date",
+   "fieldtype": "Date",
+   "label": "OB Date"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach",
+   "label": "Attach Image"
+  },
+  {
+   "depends_on": "attach_image",
+   "fieldname": "attach_image_12",
+   "fieldtype": "Image",
+   "options": "attach_image",
+   "read_only": 1
+  },
+  {
+   "fieldname": "existing_category",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Existing Category"
+  },
+  {
+   "fieldname": "ob_order",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "OB Order"
+  },
+  {
+   "fieldname": "exi_cat",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Exi Cat"
+  },
+  {
+   "fieldname": "row_values",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Row Values"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Operation Bulletin",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

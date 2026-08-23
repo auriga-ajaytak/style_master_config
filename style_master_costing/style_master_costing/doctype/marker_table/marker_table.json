@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-09 15:03:39.308852",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "marker",
+  "view_data",
+  "count",
+  "position_data",
+  "consumption",
+  "efficiency",
+  "width"
+ ],
+ "fields": [
+  {
+   "fieldname": "marker",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Marker"
+  },
+  {
+   "default": "0",
+   "fieldname": "view_data",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "View"
+  },
+  {
+   "default": "0",
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Count"
+  },
+  {
+   "fieldname": "position_data",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Position"
+  },
+  {
+   "default": "0",
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Consumption",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "efficiency",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Efficiency (%)",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Width",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Marker Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

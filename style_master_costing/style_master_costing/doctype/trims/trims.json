@@ -1,0 +1,472 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-19 10:01:14.996965",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trim_name",
+  "category",
+  "remarks",
+  "consumption",
+  "consumption_buyer",
+  "unit",
+  "per_garment",
+  "rate_our",
+  "rate_buyer",
+  "amount_our",
+  "amount_buyer",
+  "component",
+  "trims_type",
+  "currency",
+  "exch_rate",
+  "description",
+  "hs_code",
+  "item_size",
+  "item_color",
+  "purchase_extra",
+  "production_extra",
+  "trims_wastage",
+  "sample_qty",
+  "trims_supplier_name",
+  "trims_required_date",
+  "transport_mode",
+  "insurance_amt",
+  "freight_based_on",
+  "freight_with_gst",
+  "import_duty",
+  "handling_charges",
+  "gst_percent",
+  "gst_amt",
+  "total_amt",
+  "per_piece_value",
+  "trims_qty",
+  "total_req_qty",
+  "freight_amt",
+  "import_duty_amt",
+  "nominated_or_self",
+  "total_req_qty_buyer",
+  "total_amt_buyer",
+  "per_piece_value_buyer",
+  "trim_data_name",
+  "colorwise",
+  "countrywise",
+  "sizewise",
+  "required_for",
+  "panel"
+ ],
+ "fields": [
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":1}",
+   "fieldname": "trim_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trim Code",
+   "options": "Item",
+   "width": "200"
+  },
+  {
+   "description": "{\"position\":3}",
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":5}",
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#BEB2D7\",\"position\":14}",
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Consumption",
+   "precision": "2"
+  },
+  {
+   "fieldname": "consumption_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Consumption (Buyer)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#BEB2D7\",\"position\":15}",
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":18}",
+   "fieldname": "per_garment",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Per Garment"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":26}",
+   "fieldname": "rate_our",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Trims Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "rate_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Trims Rate (Buyer)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":29}",
+   "fieldname": "amount_our",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Trims Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Trims Amount (Buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":7}",
+   "fieldname": "component",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Component"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":23}",
+   "fieldname": "trims_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source",
+   "options": "Local\nImport\nBuyer\nProcess"
+  },
+  {
+   "default": "INR",
+   "description": "{\"position\":27}",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "description": "{\"position\":28}",
+   "fieldname": "exch_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Exch. Rate",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":4}",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "description": "{\"position\":6}",
+   "fieldname": "hs_code",
+   "fieldtype": "Data",
+   "label": "HS Code"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#BEB2D7\",\"position\":16}",
+   "fieldname": "item_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Size"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":17}",
+   "fieldname": "item_color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Color"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":19}",
+   "fieldname": "purchase_extra",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Purchase Extra (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":20}",
+   "fieldname": "production_extra",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Production Extra (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":21}",
+   "fieldname": "trims_wastage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Trims Wastage (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\"}",
+   "fieldname": "sample_qty",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Sample Qty"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":25}",
+   "fieldname": "trims_supplier_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trims Supplier Name",
+   "options": "Supplier"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#FF944D\",\"position\":30}",
+   "fieldname": "trims_required_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trims Required Date"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":31}",
+   "fieldname": "transport_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transport Mode",
+   "options": "Train\nAir\nBus\nCourier\nPorter"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":32}",
+   "fieldname": "insurance_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Insurance Amt.",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":33}",
+   "fieldname": "freight_based_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Freight Based on",
+   "options": "Lumsum\nPercentage"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":34}",
+   "fieldname": "freight_with_gst",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Freight with GST",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":36}",
+   "fieldname": "import_duty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Import Duty (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#B7E2DB\",\"position\":38}",
+   "fieldname": "handling_charges",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Handling Charges",
+   "precision": "2"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#CECEC3\",\"position\":39}",
+   "fieldname": "gst_percent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GST (%)",
+   "precision": "2"
+  },
+  {
+   "description": "{\"position\":40}",
+   "fieldname": "gst_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GST Amt.",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":41}",
+   "fieldname": "total_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Amt.",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":42}",
+   "fieldname": "per_piece_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Per Piece Value",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":13}",
+   "fieldname": "trims_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Trims Qty.",
+   "precision": "2"
+  },
+  {
+   "description": "{\"position\":22}",
+   "fieldname": "total_req_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Reqd. Qty",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":35}",
+   "fieldname": "freight_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Freight Amt.",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":37}",
+   "fieldname": "import_duty_amt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Import Duty Amt.",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "Self Precured",
+   "description": "{\"backgroundColor\": \"#FFBCBC\",\"position\":24}",
+   "fieldname": "nominated_or_self",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Nominated or Self",
+   "options": "Nominated\nSelf Precured"
+  },
+  {
+   "fieldname": "total_req_qty_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Total Reqd. Qty (Buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amt_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Total Amt. (Buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "per_piece_value_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Per PIece Value (Buyer)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "{\"position\":2}",
+   "fieldname": "trim_data_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trim Name",
+   "read_only": 1
+  },
+  {
+   "default": "No",
+   "description": "{\"position\":10}",
+   "fieldname": "colorwise",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Colorwise",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "No",
+   "description": "{\"position\":11}",
+   "fieldname": "countrywise",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Countrywise",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "No",
+   "description": "{\"position\":12}",
+   "fieldname": "sizewise",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sizewise",
+   "options": "Yes\nNo"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":8}",
+   "fieldname": "required_for",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Required For",
+   "options": "Required For"
+  },
+  {
+   "description": "{\"backgroundColor\": \"#C2E1A5\",\"position\":9}",
+   "fieldname": "panel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Panel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Trims",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-10 16:06:29.168223",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "process_name",
+  "smv_cost",
+  "efficiency_cost",
+  "no_of_machines",
+  "comp_factor"
+ ],
+ "fields": [
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Process",
+   "options": "Production Category"
+  },
+  {
+   "fieldname": "smv_cost",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SMV Cost",
+   "precision": "2"
+  },
+  {
+   "fieldname": "efficiency_cost",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Efficiency Cost",
+   "precision": "2"
+  },
+  {
+   "fieldname": "no_of_machines",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No. of Machines",
+   "precision": "2"
+  },
+  {
+   "fieldname": "comp_factor",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": " Complexity Factor",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "SMV Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

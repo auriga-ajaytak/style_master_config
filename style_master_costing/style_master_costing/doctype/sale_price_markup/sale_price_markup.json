@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-05 14:50:40.021465",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "percent_markup",
+  "rate_in_rupees",
+  "diff_in_rs"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "percent_markup",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "%",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "rate_in_rupees",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "In Rs.",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "diff_in_rs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "DIff in Rs.",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Sale Price Markup",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

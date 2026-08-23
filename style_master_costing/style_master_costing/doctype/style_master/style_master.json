@@ -1,0 +1,773 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-19 10:15:18.078283",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "style_details_tab",
+  "style_master_name",
+  "style_image",
+  "style_picture",
+  "column_break_3",
+  "image_preview",
+  "style_details",
+  "panel_details",
+  "panel_table",
+  "fabric_html_guidelines",
+  "trims_html_guidelines",
+  "techpack_table",
+  "marker_table",
+  "marker_preview",
+  "style_component_details",
+  "style_component",
+  "is_set",
+  "currency",
+  "size_details",
+  "size",
+  "techpack_tab",
+  "techpack_details",
+  "techpack_preview",
+  "bom_tab",
+  "sales_target_details_section",
+  "cost_price_our",
+  "sales_price_our",
+  "cost_price_buyer",
+  "sales_price_buyer",
+  "sales_price_target",
+  "column_break_60",
+  "fabric_details",
+  "fabric_table",
+  "fabric_process_route_details",
+  "process_route_table",
+  "fabric_for_process",
+  "trim_details",
+  "trims_table",
+  "amended_from",
+  "trims_process_route_details",
+  "trims_for_process",
+  "trims_process_route_table",
+  "is_pack",
+  "pcs_per_pack",
+  "naming_series",
+  "fabric_html_table",
+  "fabric_table_buttons",
+  "trims_html_table",
+  "trims_table_buttons",
+  "fabric_process_route_html_table",
+  "fabric_process_route_buttons",
+  "trims_process_route_html_table",
+  "trims_process_route_html_buttons",
+  "cost_details",
+  "marker_tab",
+  "design_and_marker_details",
+  "attach_design",
+  "marker_details_section",
+  "smv_tab",
+  "smv_details",
+  "country",
+  "content",
+  "size_series",
+  "quote_for",
+  "quote_date",
+  "priority",
+  "lead_days",
+  "garment_qty",
+  "value_addition_tab",
+  "value_addition_details",
+  "value_addition",
+  "brand_name",
+  "item",
+  "merchandiser",
+  "segment",
+  "season",
+  "approval_date",
+  "column_break_6",
+  "attach_back_design",
+  "column_break_34",
+  "image_34",
+  "image_37",
+  "style_number",
+  "manufacturing_cost",
+  "other_cost",
+  "incentive_cost",
+  "time_and_action_details",
+  "customer",
+  "time_and_action",
+  "activity_table",
+  "logistics_tab",
+  "logistics_details",
+  "instructions_tab",
+  "buyer_instruction_details",
+  "buyer_instruction",
+  "style_category",
+  "merchandiser_name",
+  "is_panel",
+  "markup_tab",
+  "sales_price_markup_section",
+  "markup",
+  "increment_by",
+  "markup_differences",
+  "costing_table",
+  "group_id",
+  "exchange_rate",
+  "smv_table",
+  "lab_test_tab",
+  "lab_test_template_details",
+  "template_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "style_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Style Details"
+  },
+  {
+   "fieldname": "style_master_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Style Master Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "style_image",
+   "fieldtype": "Section Break",
+   "label": "Style Image"
+  },
+  {
+   "fieldname": "style_picture",
+   "fieldtype": "Attach Image",
+   "label": "Select Image"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview",
+   "options": "style_picture"
+  },
+  {
+   "fieldname": "style_details",
+   "fieldtype": "Section Break",
+   "in_preview": 1,
+   "label": "Style Details"
+  },
+  {
+   "fieldname": "panel_details",
+   "fieldtype": "Section Break",
+   "label": "Panel Details"
+  },
+  {
+   "fieldname": "panel_table",
+   "fieldtype": "Table",
+   "label": "Panels",
+   "options": "Panel"
+  },
+  {
+   "fieldname": "fabric_html_guidelines",
+   "fieldtype": "HTML",
+   "options": "<style type=\"text/css\">\n.circle { \n   width: 20px;\n   height: 20px;\n   background: red; \n   -moz-border-radius: 70px; \n   -webkit-border-radius: 70px; \n   border-radius: 70px;\nfloat:left;\nmargin-left:20px;\n}\n.redc{\nbackground-color:#FFBCBC;\n}\n.bluec{background-color:#B7E2DB;}\n.greenc{background-color:#C2E1A5;}\n.orangec{background-color:#FF944D;}\n.greyc{background-color:#CECEC3;}\n.purplec{background-color:#BEB2D7;}\n.guideline{\ndisplay:flex; flex-wrap:wrap;padding-left:0;list-style-type:none;}\n.fws{font-weight:bold;}\n</style>\n<div>\n<ul class=\"guideline\">\n<li class=\"fws ml-2\"><div class=\"circle greenc\"></div>&nbsp;Merchandiser </li>\n<li class=\"fws ml-2\"><div class=\"circle redc\"></div>&nbsp;Fabric Team / Purchase</li>\n<li class=\"fws ml-2\"><div class=\"circle purplec\"></div>&nbsp;CAD</li>\n<li class=\"fws ml-2\"><div class=\"circle orangec\"></div>&nbsp;T&amp;A</li>\n<li class=\"fws ml-2\"><div class=\"circle bluec\"></div>&nbsp;Logistics</li>\n<li class=\"fws ml-2\"><div class=\"circle greyc\"></div>&nbsp;Tax</li>\n</ul>\n</div>"
+  },
+  {
+   "fieldname": "trims_html_guidelines",
+   "fieldtype": "HTML",
+   "options": "<style type=\"text/css\">\n.circle { \n   width: 20px;\n   height: 20px;\n   background: red; \n   -moz-border-radius: 70px; \n   -webkit-border-radius: 70px; \n   border-radius: 70px;\nfloat:left;\nmargin-left:20px;\n}\n.redc{\nbackground-color:#FFBCBC;\n}\n.bluec{background-color:#B7E2DB;}\n.greenc{background-color:#C2E1A5;}\n.orangec{background-color:#FF944D;}\n.greyc{background-color:#CECEC3;}\n.purplec{background-color:#BEB2D7;}\n.guideline{\ndisplay:flex; flex-wrap:wrap;padding-left:0;list-style-type:none;}\n.fws{font-weight:bold;}\n</style>\n<div>\n<ul class=\"guideline\">\n<li class=\"fws ml-2\"><div class=\"circle greenc\"></div>&nbsp;Merchandiser </li>\n<li class=\"fws ml-2\"><div class=\"circle redc\"></div>&nbsp;Fabric Team / Purchase</li>\n<li class=\"fws ml-2\"><div class=\"circle purplec\"></div>&nbsp;CAD</li>\n<li class=\"fws ml-2\"><div class=\"circle orangec\"></div>&nbsp;T&amp;A</li>\n<li class=\"fws ml-2\"><div class=\"circle bluec\"></div>&nbsp;Logistics</li>\n<li class=\"fws ml-2\"><div class=\"circle greyc\"></div>&nbsp;Tax</li>\n</ul>\n</div>"
+  },
+  {
+   "fieldname": "techpack_table",
+   "fieldtype": "Table",
+   "label": "Techpack",
+   "options": "Techpack Table"
+  },
+  {
+   "fieldname": "marker_table",
+   "fieldtype": "Table",
+   "label": "Marker Table",
+   "options": "Marker Table"
+  },
+  {
+   "fieldname": "marker_preview",
+   "fieldtype": "HTML",
+   "label": "Marker Preview"
+  },
+  {
+   "fieldname": "style_component_details",
+   "fieldtype": "Section Break",
+   "label": "Style Component Details"
+  },
+  {
+   "fieldname": "style_component",
+   "fieldtype": "Table",
+   "label": "Style  Component",
+   "options": "Style Component"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_set",
+   "fieldtype": "Check",
+   "label": "Is Set"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "size_details",
+   "fieldtype": "Section Break",
+   "label": "Size Details"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Table",
+   "label": "Size",
+   "options": "Size Data"
+  },
+  {
+   "fieldname": "techpack_tab",
+   "fieldtype": "Tab Break",
+   "label": "Techpack"
+  },
+  {
+   "fieldname": "techpack_details",
+   "fieldtype": "Section Break",
+   "label": "Tech Pack Details"
+  },
+  {
+   "fieldname": "techpack_preview",
+   "fieldtype": "HTML",
+   "label": "Tech Pack Preview"
+  },
+  {
+   "fieldname": "bom_tab",
+   "fieldtype": "Tab Break",
+   "label": "BOM"
+  },
+  {
+   "fieldname": "sales_target_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Target Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost_price_our",
+   "fieldtype": "Float",
+   "label": "Cost Price",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_price_our",
+   "fieldtype": "Float",
+   "label": "Sales Price ( Buyer Approved Price )",
+   "precision": "2"
+  },
+  {
+   "fieldname": "cost_price_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Cost Price(Buyer)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "sales_price_buyer",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Sales Price(Buyer)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "sales_price_target",
+   "fieldtype": "Float",
+   "label": "Sales Price Target",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fabric_details",
+   "fieldtype": "Section Break",
+   "label": "Fabric Details"
+  },
+  {
+   "fieldname": "fabric_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "options": "Fabric"
+  },
+  {
+   "fieldname": "fabric_process_route_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Fabric Process Route"
+  },
+  {
+   "fieldname": "process_route_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "options": "Fabric Process Route"
+  },
+  {
+   "fieldname": "fabric_for_process",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Fabric"
+  },
+  {
+   "fieldname": "trim_details",
+   "fieldtype": "Section Break",
+   "label": "Trims Details"
+  },
+  {
+   "fieldname": "trims_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "options": "Trims"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Style Master",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "trims_process_route_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Trims Process Route Details"
+  },
+  {
+   "fieldname": "trims_for_process",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Trims"
+  },
+  {
+   "fieldname": "trims_process_route_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "options": "Trims Process Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_pack",
+   "fieldtype": "Check",
+   "label": "Is Pack"
+  },
+  {
+   "default": "0",
+   "fieldname": "pcs_per_pack",
+   "fieldtype": "Int",
+   "label": "Pcs. per Pack"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CMV-STYLE-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fabric_html_table",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "fabric_table_buttons",
+   "fieldtype": "HTML",
+   "options": "<div class=\"small form-clickable-section grid-footer\">\n\t\t\t\t<div class=\"flex justify-between\">\n\t\t\t\t\t<div class=\"grid-buttons\">\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-danger grid-remove-rows hidden\" id=\"delete_row_fabric\" style=\"margin-right: 4px;\">\n\t\t\t\t\t\t\tDelete\n\t\t\t\t\t\t</button>\n\t\t\t\t\t\t<!-- hack to allow firefox include this in tabs -->\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-secondary grid-add-row\" id=\"add_row_fabric\">\n\t\t\t\t\t\t\tAdd Row\n\t\t\t\t\t\t</button>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"grid-pagination\"></div>\n\t\t\t\t\t<div class=\"text-right\">\t\t\t\t\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>"
+  },
+  {
+   "fieldname": "trims_html_table",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "trims_table_buttons",
+   "fieldtype": "HTML",
+   "options": "<div class=\"small form-clickable-section grid-footer\">\n\t\t\t\t<div class=\"flex justify-between\">\n\t\t\t\t\t<div class=\"grid-buttons\">\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-danger grid-remove-rows hidden\" id=\"delete_row_trims\" style=\"margin-right: 4px;\">\n\t\t\t\t\t\t\tDelete\n\t\t\t\t\t\t</button>\n\t\t\t\t\t\t<!-- hack to allow firefox include this in tabs -->\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-secondary grid-add-row\" id=\"add_row_trims\">\n\t\t\t\t\t\t\tAdd Row\n\t\t\t\t\t\t</button>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"grid-pagination\"></div>\n\t\t\t\t\t<div class=\"text-right\">\t\t\t\t\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>"
+  },
+  {
+   "fieldname": "fabric_process_route_html_table",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Process Route"
+  },
+  {
+   "fieldname": "fabric_process_route_buttons",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<div class=\"small form-clickable-section grid-footer\">\n\t\t\t\t<div class=\"flex justify-between\">\n\t\t\t\t\t<div class=\"grid-buttons\">\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-danger grid-remove-rows hidden\" id=\"delete_row_fabric_process_route\" style=\"margin-right: 4px;\">\n\t\t\t\t\t\t\tDelete\n\t\t\t\t\t\t</button>\n\t\t\t\t\t\t<!-- hack to allow firefox include this in tabs -->\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-secondary grid-add-row\" id=\"add_row_fabric_process_route\">\n\t\t\t\t\t\t\tAdd Row\n\t\t\t\t\t\t</button>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"grid-pagination\"></div>\n\t\t\t\t\t<div class=\"text-right\">\t\t\t\t\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>"
+  },
+  {
+   "fieldname": "trims_process_route_html_table",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Trims Process Route"
+  },
+  {
+   "fieldname": "trims_process_route_html_buttons",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<div class=\"small form-clickable-section grid-footer\">\n\t\t\t\t<div class=\"flex justify-between\">\n\t\t\t\t\t<div class=\"grid-buttons\">\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-danger grid-remove-rows hidden\" id=\"delete_row_trims_process_route\" style=\"margin-right: 4px;\">\n\t\t\t\t\t\t\tDelete\n\t\t\t\t\t\t</button>\n\t\t\t\t\t\t<!-- hack to allow firefox include this in tabs -->\n\t\t\t\t\t\t<button class=\"btn btn-xs btn-secondary grid-add-row\" id=\"add_row_trims_process_route\">\n\t\t\t\t\t\t\tAdd Row\n\t\t\t\t\t\t</button>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"grid-pagination\"></div>\n\t\t\t\t\t<div class=\"text-right\">\t\t\t\t\t\t\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>"
+  },
+  {
+   "fieldname": "cost_details",
+   "fieldtype": "Section Break",
+   "label": "Cost Details"
+  },
+  {
+   "fieldname": "marker_tab",
+   "fieldtype": "Tab Break",
+   "label": "Marker"
+  },
+  {
+   "fieldname": "design_and_marker_details",
+   "fieldtype": "Section Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "attach_design",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Attach Image 1 Design"
+  },
+  {
+   "fieldname": "marker_details_section",
+   "fieldtype": "Section Break",
+   "label": "Marker Details"
+  },
+  {
+   "fieldname": "smv_tab",
+   "fieldtype": "Tab Break",
+   "label": "SMV / Production Cost"
+  },
+  {
+   "fieldname": "smv_details",
+   "fieldtype": "Section Break",
+   "label": "SMV Details"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Data",
+   "label": "Content ( Description )"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "size_series",
+   "fieldtype": "Link",
+   "label": "Size Series",
+   "options": "Size Series"
+  },
+  {
+   "fieldname": "quote_for",
+   "fieldtype": "Select",
+   "label": "Quote For",
+   "options": "Company\nBuyer"
+  },
+  {
+   "default": "Today",
+   "fieldname": "quote_date",
+   "fieldtype": "Date",
+   "label": "Quote Date"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "lead_days",
+   "fieldtype": "Link",
+   "label": "Lead Days",
+   "options": "Style Lead Days"
+  },
+  {
+   "default": "1",
+   "fieldname": "garment_qty",
+   "fieldtype": "Float",
+   "label": "Garment Qty",
+   "precision": "2"
+  },
+  {
+   "fieldname": "value_addition_tab",
+   "fieldtype": "Tab Break",
+   "label": "Value Addition / T&A"
+  },
+  {
+   "fieldname": "value_addition_details",
+   "fieldtype": "Section Break",
+   "label": "Value Addition Details"
+  },
+  {
+   "fieldname": "value_addition",
+   "fieldtype": "Table",
+   "label": "Value Addition",
+   "options": "Value Addition Style"
+  },
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Link",
+   "label": "Brand Name",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Style Name",
+   "options": "Product",
+   "reqd": 1
+  },
+  {
+   "fieldname": "merchandiser",
+   "fieldtype": "Link",
+   "label": "Merchandiser Code",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Link",
+   "label": "Segment",
+   "options": "Segment"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_back_design",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Attach Image 2 Design"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_34",
+   "fieldtype": "Image",
+   "options": "attach_design"
+  },
+  {
+   "fieldname": "image_37",
+   "fieldtype": "Image",
+   "options": "attach_back_design"
+  },
+  {
+   "fieldname": "style_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Buyer Style Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "manufacturing_cost",
+   "fieldtype": "Table",
+   "label": "Manufacturing Cost",
+   "options": "Manufacturing Cost"
+  },
+  {
+   "fieldname": "other_cost",
+   "fieldtype": "Table",
+   "label": "Other Cost",
+   "options": "Other Cost"
+  },
+  {
+   "fieldname": "incentive_cost",
+   "fieldtype": "Table",
+   "label": "Incentive Cost",
+   "options": "Incentive Cost"
+  },
+  {
+   "fieldname": "time_and_action_details",
+   "fieldtype": "Section Break",
+   "label": "Time and Action Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Buyer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "time_and_action",
+   "fieldtype": "Link",
+   "label": "Time and Action",
+   "options": "Time and action"
+  },
+  {
+   "fieldname": "activity_table",
+   "fieldtype": "Table",
+   "label": "Activity Table",
+   "options": "Time and action table"
+  },
+  {
+   "fieldname": "logistics_tab",
+   "fieldtype": "Tab Break",
+   "label": "Logistics & Incentive Cost"
+  },
+  {
+   "fieldname": "logistics_details",
+   "fieldtype": "Section Break",
+   "label": "Logistics Details"
+  },
+  {
+   "fieldname": "instructions_tab",
+   "fieldtype": "Tab Break",
+   "label": "Instructions"
+  },
+  {
+   "fieldname": "buyer_instruction_details",
+   "fieldtype": "Section Break",
+   "label": "Buyer Instruction"
+  },
+  {
+   "fieldname": "buyer_instruction",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "style_category",
+   "fieldtype": "Link",
+   "label": "Style Category",
+   "options": "Product Category"
+  },
+  {
+   "fieldname": "merchandiser_name",
+   "fieldtype": "Data",
+   "label": "Merchandiser Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_panel",
+   "fieldtype": "Check",
+   "label": "Is Panel"
+  },
+  {
+   "fieldname": "markup_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sales Price Markup"
+  },
+  {
+   "fieldname": "sales_price_markup_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Price Markup"
+  },
+  {
+   "default": "0",
+   "fieldname": "markup",
+   "fieldtype": "Float",
+   "label": "Markup",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "increment_by",
+   "fieldtype": "Float",
+   "label": "Increment By",
+   "precision": "2"
+  },
+  {
+   "fieldname": "markup_differences",
+   "fieldtype": "Table",
+   "label": "Markup Differences",
+   "options": "Sale Price Markup"
+  },
+  {
+   "fieldname": "costing_table",
+   "fieldtype": "HTML",
+   "label": " Style Costing"
+  },
+  {
+   "fieldname": "group_id",
+   "fieldtype": "Data",
+   "label": "Group Id"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "smv_table",
+   "fieldtype": "Table",
+   "label": "SMV",
+   "options": "SMV Table"
+  },
+  {
+   "fieldname": "lab_test_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lab Test"
+  },
+  {
+   "fieldname": "lab_test_template_details",
+   "fieldtype": "Section Break",
+   "label": "Lab Test Template"
+  },
+  {
+   "fieldname": "template_table",
+   "fieldtype": "Table",
+   "label": "Template",
+   "options": "Style Lab Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Style Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "style_master_name"
+}

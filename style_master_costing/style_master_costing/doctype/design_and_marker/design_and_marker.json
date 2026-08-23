@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{design_name}",
+ "creation": "2022-09-22 15:51:45.451562",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "design_name",
+  "style_master",
+  "attach_design",
+  "design_description",
+  "start_date",
+  "end_date",
+  "column_break_3",
+  "column_break_7",
+  "customer_details_section",
+  "customer_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "design_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "style_master",
+   "fieldtype": "Link",
+   "label": "Style Master",
+   "options": "Style Master"
+  },
+  {
+   "fieldname": "attach_design",
+   "fieldtype": "Attach",
+   "label": "Attach Design"
+  },
+  {
+   "fieldname": "design_description",
+   "fieldtype": "Text",
+   "label": "Design Description"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_detail",
+   "fieldtype": "Table",
+   "label": "Customer Detail",
+   "options": "Buyer Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Style Master Costing",
+ "name": "Design And Marker",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
