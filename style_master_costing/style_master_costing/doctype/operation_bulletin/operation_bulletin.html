@@ -37,11 +37,11 @@ table{
     <td id="operation-{{x.idx}}">{{x.label}}</td>
     {% if x.default == 1 %}
     <td><input type="checkbox" id="check-{{x.idx}}" checked onchange="cur_frm.update_html_tbl()"></td>
-    {% endfor %}
+    {% endif %}
 
     {% if x.default == 0 %}
     <td><input type="checkbox" id="check-{{x.idx}}"  onchange="cur_frm.update_html_tbl()"></td>
-    {% endfor %}
+    {% endif %}
     
   </tr>
   {% endfor %}
