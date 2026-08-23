@@ -27,7 +27,7 @@ bench --site <site> install-app style_master_costing
 
 ## What the app adds
 
-**62 DocTypes**, headed by one submittable master:
+**61 DocTypes**, headed by one submittable master:
 
 * **Style Master** — the style, its BOM and its costing, used for buyer quoting.
 
