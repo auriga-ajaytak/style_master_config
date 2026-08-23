@@ -24,7 +24,7 @@ def saveProcessRoute(stylemaster, fabric_name, process_route):
 		frappe.throw(_("Style, fabric and process route are all required."))
 
 	parenttype = frappe.db.get_value("Fabric Process Route", {"parent": stylemaster}, "parenttype")
-	for candidate in (parenttype, "Style Master Costing", "Style Master"):
+	for candidate in (parenttype, "Style Master"):
 		if candidate and frappe.db.exists(candidate, stylemaster):
 			parenttype = candidate
 			break

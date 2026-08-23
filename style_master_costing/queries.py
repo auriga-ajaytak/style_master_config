@@ -1,5 +1,4 @@
-"""Whitelisted link queries and metadata helpers shared by Style Master and
-Style Master Costing.
+"""Whitelisted link queries and metadata helpers used by Style Master.
 
 Ported from cmv_erp_style_master_addon (Frappe v13). All queries are now
 parameterised — the v13 originals interpolated user input straight into SQL.

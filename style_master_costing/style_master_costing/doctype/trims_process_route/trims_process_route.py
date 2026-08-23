@@ -24,7 +24,7 @@ def saveProcessRoute(stylemaster, trim_name, process_route):
 		frappe.throw(_("Style, trim and process route are all required."))
 
 	parenttype = frappe.db.get_value("Trims Process Route", {"parent": stylemaster}, "parenttype")
-	for candidate in (parenttype, "Style Master Costing", "Style Master"):
+	for candidate in (parenttype, "Style Master"):
 		if candidate and frappe.db.exists(candidate, stylemaster):
 			parenttype = candidate
 			break

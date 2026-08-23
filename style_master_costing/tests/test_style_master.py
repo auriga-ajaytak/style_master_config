@@ -1,6 +1,6 @@
 # Copyright (c) 2022, Auriga and contributors
 # See license.txt
-"""End-to-end checks for the v13 -> v16 port of Style Master / Style Master Costing."""
+"""End-to-end checks for the v13 -> v16 port of Style Master."""
 
 import frappe
 from frappe.tests import IntegrationTestCase
@@ -65,35 +65,41 @@ class TestStyleMaster(IntegrationTestCase):
 	def test_item_validate_sets_qr_code(self):
 		self.assertTrue(frappe.db.get_value("Item", self.fabric_item, "qr_code"))
 
-	# --- the two style DocTypes -----------------------------------------
+	# --- the style DocType ------------------------------------------------
 	def test_style_master_lifecycle(self):
-		for doctype in ("Style Master", "Style Master Costing"):
-			with self.subTest(doctype=doctype):
-				doc = self._build(doctype)
-				self.assertEqual(len(doc.fabric_table), 1)
-				self.assertEqual(len(doc.trims_table), 1)
-				doc.submit()
-				self.assertEqual(doc.docstatus, 1)
-				doc.cancel()
-				self.assertEqual(doc.docstatus, 2)
+		doc = self._build("Style Master")
+		self.assertEqual(len(doc.fabric_table), 1)
+		self.assertEqual(len(doc.trims_table), 1)
+		doc.submit()
+		self.assertEqual(doc.docstatus, 1)
+		doc.cancel()
+		self.assertEqual(doc.docstatus, 2)
 
-				amended = frappe.copy_doc(doc)
-				amended.amended_from = doc.name
-				amended.docstatus = 0
-				amended.insert()
-				self.assertEqual(amended.amended_from, doc.name)
+		amended = frappe.copy_doc(doc)
+		amended.amended_from = doc.name
+		amended.docstatus = 0
+		amended.insert()
+		self.assertEqual(amended.amended_from, doc.name)
 
-	def test_both_doctypes_use_native_tabs(self):
+	def test_style_master_uses_native_tabs(self):
 		"""The v13 jQuery tab overlay is replaced by real Tab Break fields."""
-		for doctype in ("Style Master", "Style Master Costing"):
-			tabs = [f.label for f in frappe.get_meta(doctype).fields if f.fieldtype == "Tab Break"]
-			self.assertEqual(len(tabs), 10, f"{doctype}: {tabs}")
-			self.assertEqual(tabs[0], "Style Details")
+		tabs = [f.label for f in frappe.get_meta("Style Master").fields if f.fieldtype == "Tab Break"]
+		self.assertEqual(len(tabs), 10, f"{tabs}")
+		self.assertEqual(tabs[0], "Style Details")
 
 	def test_amended_from_points_at_own_doctype(self):
-		"""v13 shipped Style Master Costing with amended_from -> Style Master."""
-		df = frappe.get_meta("Style Master Costing").get_field("amended_from")
-		self.assertEqual(df.options, "Style Master Costing")
+		"""v13 pointed Style Master Costing's amended_from at Style Master."""
+		df = frappe.get_meta("Style Master").get_field("amended_from")
+		self.assertEqual(df.options, "Style Master")
+
+	def test_style_details_tab_carries_the_header_fields(self):
+		"""The header fields belong on Style Details, not scattered across later tabs."""
+		meta = frappe.get_meta("Style Master")
+		order = [f.fieldname for f in meta.fields]
+		tab_idx = [i for i, f in enumerate(meta.fields) if f.fieldtype == "Tab Break"]
+		first_tab = set(order[tab_idx[0]:tab_idx[1]])
+		for fieldname in ("customer", "item", "naming_series", "style_number", "merchandiser", "season", "segment"):
+			self.assertIn(fieldname, first_tab, f"{fieldname} is not on the Style Details tab")
 
 	# --- whitelisted endpoints the client script calls -------------------
 	def test_link_queries(self):

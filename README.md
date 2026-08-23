@@ -27,15 +27,22 @@ bench --site <site> install-app style_master_costing
 
 ## What the app adds
 
-**63 DocTypes**, headed by two submittable masters that share one schema and one
-client script:
+**62 DocTypes**, headed by one submittable master:
 
-* **Style Master** — the style, its BOM and its costing.
-* **Style Master Costing** — the same form, used for buyer quoting.
+* **Style Master** — the style, its BOM and its costing, used for buyer quoting.
 
-Both carry 110 fields across 10 tabs: Style Details, Techpack, BOM, Marker,
+It carries 110 fields across 10 tabs: Style Details, Techpack, BOM, Marker,
 SMV / Production Cost, Value Addition / T&A, Logistics & Incentive Cost,
 Instructions, Sales Price Markup, Lab Test.
+
+v13 shipped a second DocType, **Style Master Costing**, that duplicated Style
+Master field-for-field — the same 110 fields with identical properties, the same
+client script, the same costing template. Nothing referenced it: Quotation,
+Operation Bulletin, Design and Marker, the print format and the dashboard all
+point at Style Master. It was dropped, and its (correct) tab layout was moved
+onto Style Master, whose own `field_order` had drifted — Buyer, Style Name and
+Series had ended up under Value Addition while the Style Details and Logistics
+sections rendered empty.
 
 **Item extensions** — 50 custom fields and 16 property setters covering fabric
 construction, GSM, composition, weave, trims attributes, item references and a
@@ -53,7 +60,7 @@ style_master_costing/
 ├── queries.py                      whitelisted link queries + meta helper
 ├── docevents/                      Item class override, Item/Quotation hooks
 ├── public/js/
-│   ├── style_form.js               shared Style Master / Style Master Costing logic
+│   ├── style_form.js               Style Master client-side form logic
 │   ├── style_master_costing.bundle.js
 │   ├── item.js, item_list.js, quotation.js
 ├── fixtures/                       master data (cost heads, seasons, segments, ...)
@@ -149,9 +156,9 @@ shared test records (`_Test Item` and friends), do not work unchanged. The app's
 test suite opts out of those shared records for this reason.
 
 **Do not name a Workspace after a DocType.** The v16 desk resolves
-`/desk/<slug>/...` to a Workspace before a DocType, so a workspace called
-"Style Master Costing" would shadow the Style Master Costing form. The workspace
-is called "Styling", as it was in v13.
+`/desk/<slug>/...` to a Workspace before a DocType, so a workspace named after a
+style form would shadow that form. The workspace is called "Styling", as it was
+in v13.
 
 ## Tests
 

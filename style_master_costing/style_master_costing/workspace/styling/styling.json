@@ -1,7 +1,7 @@
 {
  "app": "style_master_costing",
  "charts": [],
- "content": "[{\"id\": \"smc_header_0\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Style Master &amp; Costing</b></span>\", \"col\": 12}}, {\"id\": \"smc_sc_item\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Item\", \"col\": 3}}, {\"id\": \"smc_sc_style\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Style Master\", \"col\": 3}}, {\"id\": \"smc_sc_costing\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Style Master Costing\", \"col\": 3}}, {\"id\": \"smc_header_1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Masters</b></span>\", \"col\": 12}}, {\"id\": \"smc_card_0\", \"type\": \"card\", \"data\": {\"card_name\": \"Style Master\", \"col\": 4}}, {\"id\": \"smc_card_1\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 4}}, {\"id\": \"smc_card_2\", \"type\": \"card\", \"data\": {\"card_name\": \"Fabric & Trims\", \"col\": 4}}, {\"id\": \"smc_card_3\", \"type\": \"card\", \"data\": {\"card_name\": \"Costing\", \"col\": 4}}, {\"id\": \"smc_card_4\", \"type\": \"card\", \"data\": {\"card_name\": \"Lab Testing\", \"col\": 4}}]",
+ "content": "[{\"id\": \"smc_header_0\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Style Master &amp; Costing</b></span>\", \"col\": 12}}, {\"id\": \"smc_sc_item\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Item\", \"col\": 3}}, {\"id\": \"smc_sc_style\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Style Master\", \"col\": 3}}, {\"id\": \"smc_header_1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Masters</b></span>\", \"col\": 12}}, {\"id\": \"smc_card_0\", \"type\": \"card\", \"data\": {\"card_name\": \"Style Master\", \"col\": 4}}, {\"id\": \"smc_card_1\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 4}}, {\"id\": \"smc_card_2\", \"type\": \"card\", \"data\": {\"card_name\": \"Fabric & Trims\", \"col\": 4}}, {\"id\": \"smc_card_3\", \"type\": \"card\", \"data\": {\"card_name\": \"Costing\", \"col\": 4}}, {\"id\": \"smc_card_4\", \"type\": \"card\", \"data\": {\"card_name\": \"Lab Testing\", \"col\": 4}}]",
  "creation": "2026-01-01 00:00:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
@@ -28,17 +28,6 @@
    "label": "Style Master",
    "link_count": 0,
    "link_to": "Style Master",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Style Master Costing",
-   "link_count": 0,
-   "link_to": "Style Master Costing",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -383,11 +372,6 @@
   {
    "label": "Style Master",
    "link_to": "Style Master",
-   "type": "DocType"
-  },
-  {
-   "label": "Style Master Costing",
-   "link_to": "Style Master Costing",
    "type": "DocType"
   }
  ],
