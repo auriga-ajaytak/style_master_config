@@ -553,6 +553,25 @@ frm.calulateTrimsTableTotalRowQty = (row) => {
             });
         }
 		
+		// Only fabric_name / trim_name carry a width in their DocField meta. Every
+		// other in_list_view field leaves it unset, so frappe-datatable fell back to
+		// its 30px minimum and the BOM grids rendered as a wall of truncated headers
+		// ("Consumption" -> "C..."). Fall back to a width that suits the fieldtype
+		// and still fits the column label.
+		const DEFAULT_COLUMN_WIDTHS = {
+			"Link": 140, "Dynamic Link": 140, "Data": 140, "Select": 130,
+			"Date": 110, "Datetime": 150, "Check": 70,
+			"Currency": 110, "Float": 100, "Int": 90, "Percent": 90,
+			"Small Text": 170, "Text": 170, "Text Editor": 170,
+			"Attach": 130, "Attach Image": 130, "HTML": 120,
+		};
+		frm.get_column_width = function (column) {
+			let width = parseInt(column.width, 10);
+			if (width) return width;
+			let base = DEFAULT_COLUMN_WIDTHS[column.fieldtype] || 120;
+			return Math.max(base, (column.label || "").length * 8 + 28);
+		};
+
 		frm.make_columns = function (doctypename) {
 			let columns = [];
             var order_seq = 1;
@@ -573,7 +592,7 @@ frm.calulateTrimsTableTotalRowQty = (row) => {
                         name: column.label,
                         dropdown: false,
                         align: 'center',
-                        width: column.width,
+                        width: frm.get_column_width(column),
                         docfield: column,
                         editable: true,
                         overflow:null,
@@ -581,9 +600,6 @@ frm.calulateTrimsTableTotalRowQty = (row) => {
                         focusable: column.fieldtype=='HTML' ? false : true,
                         col_sequence:order_seq
                     }
-                    if(typeof column.width !== 'undefined')
-                        col_data.width = column.width
-
                     if(typeof column.description !== 'undefined' && column.description){                                                                        
                         let parsedSettings = JSON.parse(column.description);   
                         if(typeof parsedSettings !== 'undefined' && typeof parsedSettings.position !== 'undefined')                     
