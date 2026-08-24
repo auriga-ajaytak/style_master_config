@@ -44,10 +44,17 @@ onto Style Master, whose own `field_order` had drifted — Buyer, Style Name and
 Series had ended up under Value Addition while the Style Details and Logistics
 sections rendered empty.
 
-**Item extensions** — 50 custom fields and 16 property setters covering fabric
+**Item extensions** — 51 custom fields and 16 property setters covering fabric
 construction, GSM, composition, weave, trims attributes, item references and a
 generated QR code, plus custom fields on Brand, Item Group, Item Barcode and
 Item Supplier.
+
+**Style ↔ sales link** — a Style Master is not an Item, so nothing tied a style
+to ERPNext's Item-based sales flow. `Item.style_master` links a garment item to
+the style it was costed from (shown only when `item_group_category` is
+`Garment`, since fabric and trim items are consumed by many styles), and
+`Sales Order Item.style_master` fetches it from `item_code`, so an order line
+traces back to its style without duplicate entry.
 
 **Item naming override** — `StyleItem` derives the item code series from
 `Item Group.group_category`: `F-` fabric, `T-` trims, `G-` garment, `Y-` yarn,
